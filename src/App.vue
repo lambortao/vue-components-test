@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <branchList
-      :tredData="branchData"
-      :selected="branchSelected"
+    <treeModule
+      :treeData="branchData"
       @handle-selected="branchHandleSelected"
     />
   </div>
 </template>
 
 <script>
-import branchList from '@/components/branch.vue';
+import treeModule from '@/components/mTree.vue';
 export default {
   components: {
-    branchList
+    treeModule
   },
   name: 'App',
   data() {
